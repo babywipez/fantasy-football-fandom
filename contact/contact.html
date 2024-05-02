@@ -1,0 +1,163 @@
+<!-- Author: Christopher Cassada
+Class: CGS1821.0M1
+Date: 4/29/2023
+Assignment: Final Project -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FF Fandom | Contact Us</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/final.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/slicknav.css">
+    <link rel="icon" type="image/x-icon" href="../images/favicon/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#nav_menu').slicknav({ prependTo: "#mobile_menu" });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div id="social-media">
+            <a href="#"><img src="../images/ig_icon.png" alt="Instagram icon"></a>
+            <a href="#"><img src="../images/fb_icon.png" alt="Facebook icon"></a>
+            <a href="#"><img src="../images/tiktok_icon.png" alt="Tiktok icon"></a>
+            <a href="#"><img src="../images/discord_icon.png" alt="Discord icon"></a>
+            <a href="#"><img src="../images/twitter_icon.png" alt="Twitter icon" class="twitter-icon"></a>
+        </div>
+        <div id="header-top">
+            <a href="../index.html"><img src="../images/fffandom_logo2.png" alt="Fantasy Football Fandom logo"></a>
+            <h3><u>DOMINATE</u> your league!</h3>
+            <form method="get" action="http://www.google.com/search">
+                <input type="search" name="q" size="30" maxlength="255">
+                <input type="hidden" name="domains" value="http://www.fantasyfootballfandom.com">
+                <input type="hidden" name="sitesearch" value="http://www.fantasyfootballfandom.com">
+                <input type="submit" id="search" value="Search">
+            </form>
+        </div>
+        <div id="header-bottom">
+            <nav id="mobile_menu"></nav>
+            <nav id="nav_menu">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../whyshould/whyshould.html">Why Play?</a></li>
+                    <li><a href="../platforms/platforms.html">Platforms</a></li>
+                    <li><a href="../resources/resources.html">Resources</a></li>
+                    <li><a href="../articles/articles.html">Articles</a></li>
+                    <li id="active"><a href="../contact/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <article>
+            <h1>Contact Us</h1>
+            <p>Fill out the form below in order to get in touch with FF Fandom. Whether you have a question, 
+                comment, are looking for a league, or just want to say hi, please feel free to reach out!
+            </p>
+            <form action="submission.html" method="get" id="contact_form">
+                <fieldset id="fieldset1">
+                    <legend>Tell us about yourself</legend>
+                    <label for="name">* Name:</label>
+                    <input type="text" name="full_name" id="name" autofocus required><br>
+                    <label for="email">* E-Mail:</label>
+                    <input type="email" name="email" id="email" required><br>
+                    <label for="currentleague">Do you currently play in a league?</label>
+                    <select name="currentleague" id="currentleague">
+                        <option value="s">Select an option</option>
+                        <option value="y">Yes</option>
+                        <option value="n">No</option>
+                    </select><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Finding a league</legend>
+                    Are you looking for a fantasy football league?<br>
+                    <input type="radio" name="looking" id="looking1" value="yes">
+                    <label for="looking1">Yes</label>
+                    <input type="radio" name="looking" id="looking2" value="no">
+                    <label for="looking2">No</label>
+                    <input type="radio" name="looking" id="looking3" value="unsure">
+                    <label for="lifestyle3">Not sure</label><br>
+                    If so, do you want to play in one with a buy-in & monetary prize for the winner?<br>
+                    <input type="radio" name="buyin" id="buyin1" value="Yes">
+                    <label for="buyin1">Yes</label>
+                    <input type="radio" name="buyin" id="buyin2" value="No">
+                    <label for="buyin2">No</label><br>
+                    If so, what dollar amount are you comfortable with for the buy-in?<br>
+                    <input type="radio" name="amount" id="amount1" value="1to25">
+                    <label for="amount1">$1 - $25</label>
+                    <input type="radio" name="amount" id="amount2" value="26to50">
+                    <label for="amount2">$26 - $50</label>
+                    <input type="radio" name="amount" id="amount3" value="51to100">
+                    <label for="amount3">$51 - $100</label><br>
+                    <input type="radio" name="amount" id="amount4" value="101-200">
+                    <label for="amount4">$101 - $200</label><br>
+                    What type(s) of league would you like to play in?<br>
+                    <input type="checkbox" name="type1" id="type1" value="ppr">
+                    <label for="type1">PPR</label>
+                    <input type="checkbox" name="type2" id="type2" value="halfppr">
+                    <label for="type2">Half PPR</label>
+                    <input type="checkbox" name="type3" id="type3" value="standard">
+                    <label for="type3">Standard Scoring</label>
+                    <input type="checkbox" name="type4" id="type4" value="redraft">
+                    <label for="type4">Redraft</label>
+                    <input type="checkbox" name="type5" id="type5" value="dynasty">
+                    <label for="type5">Dynasty</label>
+                    <input type="checkbox" name="type6" id="type6" value="other">
+                    <label for="type6">Other, please explain:</label><br>
+                    <textarea id="restrictions" placeholder="Guillotine, Keeper, Superflex, etc."></textarea><br>
+                    <label>Choose your preferred date to draft your fantasy team:</label>
+                    <input type="date" name="draft" min="2023-04-01" max="2023-09-06" />
+                    
+                </fieldset>
+                <fieldset>
+                    <legend>Questions:</legend>
+                    Include any questions you have for the FF Fandom team. Please separate questions with blank lines.<br>
+                    <textarea id="questions" placeholder="Ex: Where do I find player rankings?"></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>Comments:</legend>
+                    Include any other relevant information that may be helpful for our team.<br>
+                    <textarea id="comments" placeholder="Ex: I want to play with experienced leaguemates"></textarea>
+                </fieldset>
+                <fieldset class="submit-fieldset">
+                    <legend>Process your information</legend>
+                    <input type="submit" id="submit" value="Submit now">
+                    <input type="reset" id="reset" value="Reset form">
+                </fieldset>
+            </form>
+        </article>
+    </main>
+
+    <footer>
+        <img src="../images/fffandom_logo1.png" alt="Fantasy Football Fandom logo" class="footer-logo">
+        <div id="footer-social">
+            <a href="#"><img src="../images/instagram.png" alt="Instagram logo"></a>
+            <a href="#"><img src="../images/facebook.png" alt="Facebook logo"></a>
+            <a href="#"><img src="../images/tik-tok.png" alt="TikTok logo"></a>
+            <a href="#"><img src="../images/discord.png" alt="Discord logo"></a>
+            <a href="#"><img src="../images/twitter.png" alt="Twitter logo"></a>
+        </div>
+        <p>Wesbite created by Christopher Cassada&copy;</p>
+        <p>All icons provided freely by Flaticon, Freepik, and Pixel Perfect</p>
+        <p>Unless stated otherwise, all other images all belong to webmaster.</p>
+    </footer>
+
+</body>
+
+</html>

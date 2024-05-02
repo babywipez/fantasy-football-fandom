@@ -1,0 +1,686 @@
+/* Author: Christopher Cassada 
+Class: CGS1821.0M1 
+Date: 4/28/2023 
+Assignment: Final Project */
+
+/* body styles */
+
+body {
+    font-size: 100%;
+}
+
+/* header styles */
+#social-media {
+    background-color: #545454;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#social-media img {
+    height: 1.5em;
+    padding: 0.7em 1em 0.5em 0.3em;
+}
+
+.twitter-icon {
+    margin-right: 1.5em;
+}
+
+#header-top {
+    width: 1375px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.1em 0;
+}
+
+header h3 {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+}
+
+#header-bottom {
+    background: #fff;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.4);
+}
+
+header form {
+    padding-right: 0;
+}
+
+header form input {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+    color: white;
+    background-color: #2b2c2d;
+}
+
+header nav {
+    width: 1373px;
+    margin: 0 auto;
+}
+
+header ul {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+}
+
+header ul li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    list-style-type: none;
+    width: 16.66%;
+}
+
+header ul li a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 0.8em 0;
+}
+
+#header-bottom a {
+    text-decoration: none;
+    color: #322D31;
+    text-shadow: 1px 1px gray;
+}
+
+header img {
+    padding-top: 4px;
+}
+
+header li:hover, li:focus {
+    background-color: #98AFC7;
+}
+
+#active {
+    font-weight: bold;
+    box-shadow: inset 0 -7px 0 maroon;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+/* main styles */
+
+main {
+    background-color: #f2f2f2;
+    box-shadow: 0px 2px 10px #36454F inset;
+}
+
+article {
+    background-color: white;
+    box-shadow: 0px 2px 10px #36454F inset;
+    width: 1369px;
+    margin: 0 auto;
+    border-left: 2px solid #2b2c2d;
+    border-right: 2px solid #2b2c2d;
+}
+
+article h1 {
+    font-family: 'Bebas Neue', Helvetica, sans-serif;
+    font-size: 3em;
+    text-shadow: 1px 1px lightgray;
+    text-align: center;
+    padding-top: 0.5em;
+    margin-top: 0;
+    text-decoration: underline;
+}
+
+article h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+article p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    line-height: 140%;
+    padding: 0 8em;
+}
+
+article iframe {
+    box-shadow: 2px 3px 10px darkslategrey;
+}
+
+article img {
+    max-width: 600px;
+    max-height: 500px;
+    box-shadow: 2px 3px 10px darkslategrey;
+}
+
+article figure {
+    text-align: center;
+    padding: 1em 0;
+}
+
+dl {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    border: 1px solid gray;
+    padding: 1.5em;
+    margin: 3em 4em;
+    box-shadow: 8px 4px 20px black;
+    background: rgb(84, 84, 84);
+    background: linear-gradient(51deg, rgba(84, 84, 84, 1) 67%, rgba(124, 124, 124, 1) 100%);
+    color: white;
+}
+
+dt {
+    padding: 0.5em 0;
+}
+
+figcaption {
+    max-width: 560px;
+    margin: 0 auto;
+}
+
+article ul {
+    padding-left: 11em;
+}
+
+.article-description {
+    text-align: center;
+}
+
+.article-alternative {
+    margin: 0 auto;
+}
+
+.slideshow-caption, .alternative-caption {
+    text-align: center;
+    font-size: 100%;
+}
+
+/* styles for article topper on home page */
+
+img#article-topper {
+    max-width: 100%;
+    width: 100%;
+}
+
+#article-container {
+    position: relative;
+}
+
+.article-headline {
+    font-family: 'Bebas Neue', Helvetica, sans-serif;
+    font-size: 4.5em;
+    position: absolute;
+    bottom: 30px;
+    left: 25px;
+    color: white;
+    text-shadow: 2px 2px 1px black;
+    text-decoration: none;
+    margin: 0;
+}
+
+/* styles for the slideshow */
+
+.article-alternative {
+    display: none;
+}
+
+.alternative-caption {
+    display: none;
+}
+
+.slideshow {
+    list-style: none;
+    width: 500%;
+    position: relative;
+    padding-left: 390px;
+}
+
+.slideshow li {
+    width: 20%;
+    float: left;
+}
+
+.slideshow { animation: slideshow 30s infinite normal; }
+@keyframes slideshow {
+    0%   {left:     0%;}
+    10%  {left:     0%;}
+    20%  {left:  -100%;}
+    30%  {left:  -100%;}
+    40%  {left:  -200%;}
+    50%  {left:  -200%;}
+    60%  {left:  -300%;}
+    70%  {left:  -300%;}
+    80%  {left:  -400%;}
+    90%  {left:  -400%;}
+    100% {left:  -400%;}
+}
+
+/* image styles for specific cases */
+
+.mock-draft {
+    display: block;
+    max-width: 874px;
+    margin: 0 auto;
+}
+
+.bill-picture {
+    height: 315px;
+}
+
+#figure-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.line-break {
+    border-bottom: 1px solid gray;
+}
+
+.trophy-icon {
+    display: block;
+    box-shadow: none;
+    width: 60px;
+    margin: auto;
+    padding-top: 1.5em;
+}
+.friends-picture {
+    float: left;
+    margin-right: 2em;
+    border: 1px solid black;
+    padding-top: 0;
+}
+
+.stadium-picture {
+    float: right;
+    margin-left: 2em;
+    border: 1px solid black;
+    padding-top: 0;
+}
+
+.top-page {
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 1em;
+    font-size: 120%;
+}
+
+.logo-img {
+    max-width: 250px;
+    box-shadow: none;
+}
+
+.submit-fieldset {
+    margin-bottom: 0;
+    padding-bottom: 1.3em;
+}
+
+/* aside styles */
+
+aside {
+    margin: 0;
+    padding: 1.4em;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 1em;
+    font-size: 1.2em;
+    background-color: #2b2c2d;
+    color: white;
+    flex-grow: 2;
+}
+
+aside a {
+    color: white;
+}
+
+aside h3 {
+    margin: 0.5em 0;
+}
+
+aside a:hover {
+    color:#98AFC7;
+}
+
+aside li {
+    border-top: 2px solid gray;
+    margin-top: 0.4em;
+    padding-top: 0.4em;
+    padding-bottom: 0.15em;
+}
+
+aside ul {
+    padding: 2%;
+    margin: 0.5em 0;
+}
+
+aside li {
+    list-style: none;
+}
+
+#platform-container {
+    display: flex;
+}
+
+/* table styles */
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 2em auto;
+}
+
+thead, tfoot {
+    background-color: #ccf7ff;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 0.2em 0.7em;
+}
+
+.teams-table {
+    text-align: center;
+    font-weight: bold;
+}
+
+tfoot {
+    font-weight: bold;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* form styles */
+
+form {
+    padding: 0 2em;
+    font-size: 120%;
+}
+
+fieldset {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 95%;
+}
+
+label,
+input,
+select {
+    font-size: 95%;
+    margin-top: 0.5em;
+}
+
+input:required {
+    border: 2px solid red;
+}
+
+input:valid {
+    border: 1px solid black;
+}
+
+br {
+    clear: both;
+}
+
+#fieldset1 label {
+    float: left;
+    width: 7em;
+    text-align: right;
+}
+
+#fieldset1 input,
+select {
+    margin-left: 0.5em;
+}
+
+input {
+    margin-left: 3.5em;
+    margin-bottom: 0.5em;
+}
+
+select {
+    margin-bottom: 0.5em;
+}
+
+textarea {
+    margin-left: 3.5em;
+}
+
+textarea {
+    width: 70%;
+    height: 5em;
+    margin-top: 0.5em;
+}
+
+#submit,
+#reset {
+    width: 10em;
+}
+
+#reset {
+    margin-left: 0.5em;
+}
+
+/* footer styles */
+
+footer {
+    width: 100%;
+    background-color: white;
+    color: black;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 2px solid #2b2c2d;
+    padding-bottom: 2em;
+    padding-top: 0.8em;
+    /* box-shadow: inset 6px 6px 15px lightgrey; */
+}
+
+.footer-logo {
+    margin-top: 3em;
+    margin-bottom: 0.3em;
+}
+
+footer p {
+    margin: 0;
+    padding-top: 0.6em;
+    font-size: 100%;
+}
+
+#footer-social img {
+    width: 50px;
+    padding: 0.3em;
+}
+
+/* media queries */
+
+@media screen and (max-width: 1450px) {
+    header {
+        width: 100%;        
+    }
+    header ul{
+        display: flex;
+    }
+    article {
+        width: 97%;
+    }
+    article img {
+        width: 98%;
+    }
+    .bill-picture {
+        max-width: 560px;
+        height: auto;
+        margin-right: 0;
+    }
+    .slideshow {
+        display: none;
+    }
+    .slideshow-caption {
+        display: none;
+    }
+    .article-alternative {
+        display: block;
+    }
+    .alternative-caption {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1395px) {
+    #social-media img {
+        padding: 0.5em 1em 0.5em 0.3em;
+    }
+    #header-top {
+        width: 100%;
+    }
+    header nav {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1371px) {
+    iframe {
+        margin: auto;
+        margin-top: 2em;
+    }
+    #figure-container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    #header-top {
+        display: block;
+    }
+    header h3 {
+        margin: 0.4em 0;
+    }
+    header form {
+        padding: 0;
+    }
+    .article-headline {
+        font-size: 3.5em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #nav_menu {
+        display: none;
+    }
+    header {
+        height: auto;
+    }
+    #mobile_menu {
+        display: block;
+        width: 100%;
+    }
+    #mobile_menu a {
+        color: white;
+    }
+    #mobile_menu a:hover, a:focus {
+        background-color: #322D31;
+    }
+    #mobile_menu ul {
+        margin: 0;
+    }
+    .slicknav_nav a {
+        margin: 0!important;
+    }
+    header img {
+        padding-left: 0;
+    }
+    header li {
+        margin: 0 auto;
+    }
+    header li:hover, li:focus {
+        background-color: #322D31;
+    }
+    #platform-container {
+        flex-direction: column;
+    }
+    aside {
+        border-radius: 15px;
+    }
+    .bill-picture {
+        width: 98%;
+    }
+    iframe {
+        width: 98%;
+    }
+    article p {
+        padding: 0 2em;
+    }
+    main {
+        border-top: none;
+    }
+    aside {
+        width: 50%;
+        margin: 1em auto;
+        float: none;
+        text-align: center;
+        padding: 0;
+    }
+    dl {
+        box-shadow: 2px 2px 8px black;
+        margin: 1em auto;
+        width: 90%;
+        padding: 0.5em;
+    }
+    footer img {
+        max-width: 350px;
+    }
+    .article-headline {
+        font-size: 2.5em;
+    }
+    article ul {
+        padding-left: 3em;
+    }
+}
+
+@media screen and (max-width: 614px) {
+    #submit {
+        margin-left: 9px;
+    }
+    .article-headline {
+        font-size: 1.8em;
+    }
+    table {
+        font-size: 70%;
+    }
+}
+
+@media screen and (max-width: 445px) {
+    #header-top img {
+        width: 100%;
+    }
+    header h3 {
+        font-size: 80%;
+    }
+    aside {
+        width: 60%;
+    }
+    article p {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    header input {
+        margin: 0.1em 0!important;
+    }
+    article ul {
+        padding-left: 1.5em;
+    }
+}
